@@ -154,6 +154,7 @@ body {
     background: #ffffff;
     color: rgb(0, 0, 0);
     transition: .4s ease-in-out;
+    margin-top: 35px;
   }
   
   .card1 button:hover {
@@ -240,3 +241,4 @@ body {
     font-size: 4vw;
     color: aliceblue;
 }
+
