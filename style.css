@@ -199,6 +199,7 @@ body {
     height: 35%;
     width: 30%;
     
+    
 }
 .card {
     width: 100%;
@@ -257,9 +258,25 @@ body {
 #projects{
     position: absolute;
     padding: 0%;
-    margin-bottom: 60vh;
+    margin-bottom: 110vh;
     margin-left: 50px;
     font-size: 4vw;
     color: aliceblue;
 }
 
+#page4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.elem {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
