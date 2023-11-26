@@ -137,6 +137,12 @@ body {
   .card1 a:hover {
     color: red;
   }
+  .linkedin:hover svg{
+    fill: red;
+    transition: .4s ease-in-out
+
+  }
+
   
   .card1 button {
     padding: 0.8em 1.7em;
