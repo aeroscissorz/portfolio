@@ -198,6 +198,8 @@ body {
 #page4 .elem{
     height: 35%;
     width: 30%;
+    padding: 10px;
+
     
     
 }
@@ -267,16 +269,17 @@ body {
 #page4 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .elem {
-  width: 50%;
-  box-sizing: border-box;
+
+ flex-basis: calc(33.333% - 20px);   box-sizing: border-box;
   padding: 10px;
 }
 
 .card {
   border: 1px solid #ddd;
   padding: 10px;
-  margin: 10px;
+  height: 100%;
 }
