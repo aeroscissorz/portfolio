@@ -260,7 +260,7 @@ body {
 #projects{
     position: absolute;
     padding: 0%;
-    margin-bottom: 110vh;
+    margin-bottom: 120vh;
     margin-left: 50px;
     font-size: 4vw;
     color: aliceblue;
@@ -282,4 +282,25 @@ body {
   border: 1px solid #ddd;
   padding: 10px;
   height: 100%;
+  overflow: hidden;
+}
+#page4 button {
+  padding: 0.8em 1.7em;
+  display: block;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: .4s ease-in-out;
+  margin-top: 35px;
+
+}
+
+#page4 button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+  
+
 }
