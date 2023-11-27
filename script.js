@@ -3,6 +3,16 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+function showContent(contentType) {
+    // Hide all content sections
+    document.getElementById('skills-content').style.display = 'none';
+    document.getElementById('education-content').style.display = 'none';
+    document.getElementById('experience-content').style.display = 'none';
+
+    // Show the selected content
+    document.getElementById(`${contentType}-content`).style.display = 'block';
+}
+
 function loadingAnimation(){
     
 gsap.from("#page1 h2,p,img",

@@ -95,10 +95,12 @@ body {
 
 #page2{
     
-    height: 100vh;
+  height: auto; /* Change from 100vh to auto */
+    min-height: 100vh; /* Add min-height to ensure it takes at least the full viewport height */
     width: 100%;
     position: relative;
     display: flex;
+    flex-direction: column; /* Change flex direction to column */
     align-items: center;
     justify-content: space-evenly;
 }
@@ -183,6 +185,60 @@ body {
     cursor: pointer;
   }
 
+  #abtme{
+    
+    height: 100vh;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  padding:auto 20 auto 20
+
+
+}
+#abtme button{
+  width: 20vh;
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: .4s ease-in-out;
+  margin-top: 35px;}
+
+#abtme button:hover{
+  background: red;
+  color: white;
+  cursor: pointer;
+
+}
+#abtmecard {
+  margin-top: 5vh;
+
+  width: 60vh;
+  height: 120vh;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25),
+              -15px -15px 30px rgb(251, 1, 1);
+  padding: 20px; 
+  color: white;
+}
+
+
+
 
 #page4{
     margin-top: 200px;
@@ -196,6 +252,16 @@ body {
 }
 
 #page4 .elem{
+  margin-top: 400px;
+    height: 35%;
+    width: 30%;
+    padding: 10px;
+
+    
+    
+}
+#page4 .elem1{
+  margin-top: 40px;
     height: 35%;
     width: 30%;
     padding: 10px;
@@ -282,7 +348,6 @@ body {
   border: 1px solid #ddd;
   padding: 10px;
   height: 100%;
-  overflow: hidden;
 }
 #page4 button {
   padding: 0.8em 1.7em;
@@ -302,5 +367,20 @@ body {
   color: white;
   cursor: pointer;
   
+
+}
+
+#page5{
+  margin-top: 200px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
 }
