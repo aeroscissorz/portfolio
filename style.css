@@ -252,17 +252,17 @@ body {
 }
 
 #page4 .elem{
-  margin-top: 400px;
+  margin-top: 300px;
     height: 35%;
-    width: 30%;
-    padding: 10px;
+    width: 25%;
+    padding:15px;
 
     
     
 }
 #page4 .elem1{
   margin-top: 40px;
-    height: 35%;
+    height: 30%;
     width: 30%;
     padding: 10px;
 
@@ -283,10 +283,11 @@ body {
   .card:hover {
     border-radius: 15px;
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
-    background: red;
+    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
   }
+  
   
   .first-content {
     height: 100%;
@@ -368,6 +369,37 @@ body {
   cursor: pointer;
   
 
+}
+/* <reset-style> ============================ */
+a {
+  text-decoration: none;
+}
+.menu__link {
+  
+  color: #fff;
+  line-height: 2;
+  position: relative;
+  font-size: 20px;
+}
+
+.menu__link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -.25rem;
+  right: 0;
+  transition: right .4s, width .4s, left .4s;
+}
+
+.menu__link:hover::before {
+  width: 100%;
+  left: 0;
+}
+.second-content{
+  display: block;
 }
 
 #page5{
