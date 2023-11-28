@@ -497,8 +497,8 @@ a {
  #submit:hover{
   background-color: #333333;
  }
- .copyright{
-  display: flex;
-  color: aqua;
-  display: block;
- }
+ #copyright {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
