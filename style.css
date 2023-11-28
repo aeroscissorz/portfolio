@@ -437,3 +437,68 @@ a {
 
 }
 
+.contact-left{
+  flex-basis: 35%;
+}
+
+.contact-right{
+  flex-basis: 60%;
+}
+
+.contact-left p{
+  margin-top: 30px;
+  font-size: large;
+  color: rgb(233, 76, 76);
+
+
+}
+#contact{
+  position: relative;
+    padding: 0%;
+    margin-left: 50px;
+    font-size: 2vw;
+    color: aliceblue;
+    align-items: center;
+}
+
+
+
+
+
+.container1{
+  width: 500px;
+  padding: 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  background-color: #003b5b;
+ }
+.container h4{
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: white;
+ }
+ input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+ }
+ textarea{
+  width: 100%;
+  padding: 10px;
+ }
+ #submit{
+  border: none;
+  background-color: red;
+  color: white;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+ }
+ #submit:hover{
+  background-color: #333333;
+ }
+ .copyright{
+  display: flex;
+  color: aqua;
+  display: block;
+ }
