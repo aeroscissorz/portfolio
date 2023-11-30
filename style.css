@@ -412,6 +412,9 @@ padding: 40px;
     font-size: 0px;
     transform: rotate(50deg) scale(0);
   }
+  .second-content p{
+    font-size: 15px;
+  }
   
   .card:hover .second-content {
     opacity: 1;
@@ -742,9 +745,9 @@ a {
   }
 
   #abtme #abtmecard {
-      width: 50vh;
+      width: 40vh;
       height: 70vh; /* Adjusted height for smaller screens */
-      font-size: 1.3vw; /* Increased font size for smaller screens */
+      font-size: 1.2vw; /* Increased font size for smaller screens */
   }
 
   .share svg {
@@ -774,6 +777,9 @@ a {
     flex-basis: calc(80% - 20px); /* Make each card take half width */
     margin-bottom: 10px; /* Adjust margin to reduce spacing between adjacent cards */
     height: 450px;
+  }
+  .second-content p{
+    font-size: 0.49em;
   }
   
   
