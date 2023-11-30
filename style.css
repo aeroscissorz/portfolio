@@ -725,12 +725,12 @@ a {
   }
 
   .card1 span {
-      margin-top: 140px;
+      margin-top: 150px;
       font-size: 2em;
   }
 
   .card1 .info {
-      font-size: 0.7em;
+      font-size: 0.8em;
       line-height: 20px;
   }
 
@@ -747,7 +747,7 @@ a {
   #abtme #abtmecard {
       width: 40vh;
       height: 70vh; /* Adjusted height for smaller screens */
-      font-size: 1.2vw; /* Increased font size for smaller screens */
+      font-size: 1.5vw; /* Increased font size for smaller screens */
   }
 
   .share svg {
