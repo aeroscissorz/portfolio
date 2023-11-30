@@ -2,14 +2,22 @@
   font-family: myFont;
   src: url(Axis\ Extrabold.otf);
 }
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: myFont;
-  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: myFont;
+  overflow-x: hidden;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
 }
+
+#main {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
 #nav{
   z-index: 99;
   align-items: flex-start;
@@ -40,10 +48,7 @@ body {
   width: 100%;
 }
 
-#main{
-  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
 
-}
 
 
 *::selection{
@@ -330,7 +335,7 @@ padding: 40px;
 
 
 #page4{
-    margin-top: 200px;
+    margin-top: 300px;
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -417,7 +422,7 @@ padding: 40px;
 #projects{
     position: absolute;
     padding: 0%;
-    margin-bottom: 120vh;
+    margin-bottom: 170vh;
     margin-left: 50px;
     font-size: 4vw;
     color: aliceblue;
@@ -427,6 +432,7 @@ padding: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height:150vh
 }
 
 .elem {
@@ -493,7 +499,6 @@ a {
 }
 
 #page5{
-  margin-top: 200px;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -513,6 +518,9 @@ a {
 
 .contact-right{
   flex-basis: 60%;
+}
+.contact-right form{
+  width: 100%;
 }
 
 .contact-left p{
@@ -535,13 +543,14 @@ a {
 
 
 
-.container1{
-  width: 500px;
+.container1 {
+  width: 80%; /* Adjust the width as per your preference */
+  max-width: 500px; /* Add a max-width to limit the width on larger screens */
   padding: 30px;
   border: 1px solid #eeeeee;
   border-radius: 10px;
   background-color: #003b5b;
- }
+}
 .container h4{
   margin-bottom: 10px;
   font-size: 24px;
@@ -577,7 +586,238 @@ a {
   background-color: #ff0000;
  }
  #copyright {
-  position: fixed;
-  bottom: 0;
   width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background: linear-gradient(-45deg, #161616, #1f2020, rgb(160, 38, 38), #f64141);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 10px; /* Reduce the margin-bottom */
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%
+  }
+
+  50% {
+      background-position: 100% 50%
+  }
+
+  to {
+      background-position: 0% 50%
+  }
+}
+
+
+
+
+/* page 1 responsiveness */
+/* Media query for screens up to 600px width */
+/* Media query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 14px;
+      font-family: myFont;
+  }
+
+  #nav #links {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-left: 20px;
+  }
+
+  #nav #links a {
+      margin: 0;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: small;
+  }
+
+  #nav .dragon {
+      height: 25px;
+  }
+
+  #page1 #name {
+      font-size: 2em;
+      padding: 15px;
+  }
+
+  #name {
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 0, 0);
+    white-space: nowrap;
+    animation: typingAndErasing 10s infinite;
+    font-size: 1rem;
+    width: 0;
+}
+
+@keyframes typingAndErasing {
+    0%, 100% { width: 0 }
+    10%, 90% { width: 100% }
+}
+
+
+
+  .mouse {
+      margin-top: 60%;
+      width: 40px;
+      height: 70px;
+  }
+
+  @keyframes animate {
+      0%, 100% {
+          clip-path: polygon(
+              0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%
+          );
+      }
+
+      50% {
+          clip-path: polygon(
+              0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%
+          );
+      }
+  }
+
+  /* Additional adjustments for smaller screens */
+}
+
+/* Media query for screens up to 400px width */
+@media only screen and (max-width: 400px) {
+  body {
+      font-size: 12px;
+  }
+
+  #page1 #name {
+      font-size: 2.5em; /* Further adjusted size for very small screens */
+  }
+
+  .mouse {
+      margin-top: 15%; /* Further adjusted position for very small screens */
+      width: 30px; /* Further adjusted size for very small screens */
+      height: 50px; /* Further adjusted size for very small screens */
+  }
+
+  /* Further adjustments for very small screens */
+}
+
+
+
+
+
+/* page2 responsiveness */
+
+/* Media query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  #page2 .image {
+      height: 110px;
+      width: 100px;
+  }
+
+  .card1 {
+      height: 800px; /* Adjusted height for smaller screens */
+  }
+
+  .card1 span {
+      margin-top: 140px;
+      font-size: 2em;
+  }
+
+  .card1 .info {
+      font-size: 0.7em;
+      line-height: 20px;
+  }
+
+  .card1 .img {
+      height: 1em;
+  }
+
+  #abtme button {
+      width: 15vh;
+      font-size: 0.8em;
+      align-items: center;
+  }
+
+  #abtme #abtmecard {
+      width: 50vh;
+      height: 70vh; /* Adjusted height for smaller screens */
+      font-size: 1.3vw; /* Increased font size for smaller screens */
+  }
+
+  .share svg {
+      height: 25px;
+  }
+  #skills-content,
+  #education-content,
+  #experience-content {
+      font-size: 1.9em;
+      margin-bottom: 50px;
+  }
+
+}
+
+
+
+/* page 4 responsiveness */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  #projects{
+  margin-bottom: 160vh;
+  margin-right: 7vh;
+  font-size: 2em; /* Adjust font size if needed */
+  }
+  #page4 .elem1 {
+    flex-basis: calc(80% - 20px); /* Make each card take half width */
+    margin-bottom: 10px; /* Adjust margin to reduce spacing between adjacent cards */
+    height: 450px;
+  }
+  
+  
+}
+
+
+
+
+
+/* page 5 responsiveness */
+/* Media query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  #page5 {
+    margin-top: 370vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left, .contact-right {
+    flex-basis: 100%;
+  }
+
+  .contact-left p {
+    text-align: center;
+    font-size: 1em;
+    margin-right: 50px;
+  }
+  .contact-right {
+    flex-basis: 8%; /* Adjust the flex-basis to your desired width (e.g., 80%) */
+    margin-left: 15px; /* Center the form by adding auto margin */
+    width: 70%;
+  }
+  #contact {
+    font-size: 3vw;
+  }
+}
+
+/* Media query for screens up to 400px width */
+@media only screen and (max-width: 400px) {
+  .container1 {
+    padding: 15px;
+  }
+
+  #submit {
+    width: 100%;
+  }
 }
